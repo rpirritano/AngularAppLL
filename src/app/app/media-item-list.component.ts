@@ -18,9 +18,10 @@ export class MediaItemListComponent {
   }
 
   onMediaItemDelete(mediaItem) {
-    this.mediaItemService.delete(mediaItem).subscribe(() => {
-      this.getMediaItems(this.medium);
-    });
+    this.mediaItemService.delete(mediaItem)
+      .subscribe(() => {
+        this.getMediaItems(this.medium);
+      });
   }
 
   getMediaItems(medium) {
